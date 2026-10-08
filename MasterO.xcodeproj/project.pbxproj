@@ -1,0 +1,316 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A1806779B0177637CA1E9B3 /* ChecklistRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D007C86D482CC9F4CB46DD6 /* ChecklistRepository.swift */; };
+		6FDC02F992BC57C0270E9B9E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538B1E858A952B6DA33C5B68 /* ContentView.swift */; };
+		992B3583AC1A93E603429948 /* TemplateManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933168E5AA6FF0E64530A07C /* TemplateManagerView.swift */; };
+		A31B60A3E842CF895A17FC7C /* ChecklistItemDraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3FFDEB5AC767EA217AF89E /* ChecklistItemDraft.swift */; };
+		CDA65E16F41198CBE776F319 /* ApplicationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BA354873831DC28EE0EC28 /* ApplicationViewModel.swift */; };
+		CDFAF934C0160FD0303188F7 /* EditingSheets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CB6A34D33D70E71218A1EB /* EditingSheets.swift */; };
+		DD0828235584921DE518BA04 /* MasterOApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91613BEF6D2C81813466BB30 /* MasterOApp.swift */; };
+		DD99AC1261B436C3A65578D9 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DF0A499F41C272A3DE165E /* Models.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		15BA354873831DC28EE0EC28 /* ApplicationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationViewModel.swift; sourceTree = "<group>"; };
+		2EFF990376C3B6078D22B72B /* MasterO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasterO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46DF0A499F41C272A3DE165E /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		4F3FFDEB5AC767EA217AF89E /* ChecklistItemDraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItemDraft.swift; sourceTree = "<group>"; };
+		538B1E858A952B6DA33C5B68 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6D007C86D482CC9F4CB46DD6 /* ChecklistRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistRepository.swift; sourceTree = "<group>"; };
+		91613BEF6D2C81813466BB30 /* MasterOApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterOApp.swift; sourceTree = "<group>"; };
+		933168E5AA6FF0E64530A07C /* TemplateManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateManagerView.swift; sourceTree = "<group>"; };
+		A6CB6A34D33D70E71218A1EB /* EditingSheets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingSheets.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		51873018173F63BA5C87687F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2EFF990376C3B6078D22B72B /* MasterO.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		816162B00ECDCE0F72F54A85 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				15BA354873831DC28EE0EC28 /* ApplicationViewModel.swift */,
+				4F3FFDEB5AC767EA217AF89E /* ChecklistItemDraft.swift */,
+				6D007C86D482CC9F4CB46DD6 /* ChecklistRepository.swift */,
+				538B1E858A952B6DA33C5B68 /* ContentView.swift */,
+				A6CB6A34D33D70E71218A1EB /* EditingSheets.swift */,
+				91613BEF6D2C81813466BB30 /* MasterOApp.swift */,
+				46DF0A499F41C272A3DE165E /* Models.swift */,
+				933168E5AA6FF0E64530A07C /* TemplateManagerView.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D573CF1D4FC6615C5F502063 = {
+			isa = PBXGroup;
+			children = (
+				816162B00ECDCE0F72F54A85 /* Sources */,
+				51873018173F63BA5C87687F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CE1DB8ACE299F2E931CFB47 /* MasterO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFCF1FB03899636CD0A07E33 /* Build configuration list for PBXNativeTarget "MasterO" */;
+			buildPhases = (
+				61888133B92930AB876F880D /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MasterO;
+			packageProductDependencies = (
+			);
+			productName = MasterO;
+			productReference = 2EFF990376C3B6078D22B72B /* MasterO.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55E16BE5E0D5201E14DEBBFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 82C63DB64DAD56C79A35CDAF /* Build configuration list for PBXProject "MasterO" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = D573CF1D4FC6615C5F502063;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 51873018173F63BA5C87687F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CE1DB8ACE299F2E931CFB47 /* MasterO */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61888133B92930AB876F880D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDA65E16F41198CBE776F319 /* ApplicationViewModel.swift in Sources */,
+				A31B60A3E842CF895A17FC7C /* ChecklistItemDraft.swift in Sources */,
+				4A1806779B0177637CA1E9B3 /* ChecklistRepository.swift in Sources */,
+				6FDC02F992BC57C0270E9B9E /* ContentView.swift in Sources */,
+				CDFAF934C0160FD0303188F7 /* EditingSheets.swift in Sources */,
+				DD0828235584921DE518BA04 /* MasterOApp.swift in Sources */,
+				DD99AC1261B436C3A65578D9 /* Models.swift in Sources */,
+				992B3583AC1A93E603429948 /* TemplateManagerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0D2007562B19859FAC10EE16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mastero.checklists;
+				PRODUCT_NAME = MasterO;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		0D3F525B5A5B742A422FCB65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MasterO;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		20F2E38277F82B6D6736C485 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MasterO;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		B7523533376FF7A56120AFD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mastero.checklists;
+				PRODUCT_NAME = MasterO;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82C63DB64DAD56C79A35CDAF /* Build configuration list for PBXProject "MasterO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D3F525B5A5B742A422FCB65 /* Debug */,
+				20F2E38277F82B6D6736C485 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BFCF1FB03899636CD0A07E33 /* Build configuration list for PBXNativeTarget "MasterO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D2007562B19859FAC10EE16 /* Debug */,
+				B7523533376FF7A56120AFD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 55E16BE5E0D5201E14DEBBFA /* Project object */;
+}
