@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A25F533C4611FDBEFE776C6 /* CheckTukUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199FF2808A006EFD46B303AC /* CheckTukUITests.swift */; };
+		CDEA9B30D159A53B0727A861 /* DataWorkflowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AE8308BC4DA71EED836DBC /* DataWorkflowTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		437F648F68C0706B020DC086 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32039DE7FC7C6A1155CBB308 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD32A6908F123C794E08CEF5;
+			remoteInfo = CheckTuk;
+		};
+		45FA00D3CF0337CAE0620720 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32039DE7FC7C6A1155CBB308 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD32A6908F123C794E08CEF5;
+			remoteInfo = CheckTuk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		199FF2808A006EFD46B303AC /* CheckTukUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckTukUITests.swift; sourceTree = "<group>"; };
+		75704529A7BDAEF2C3AB744F /* CheckTuk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckTuk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A4179AC7633E790E80F5980 /* CheckTukTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckTukTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2441041F2905953AA962E42 /* CheckTukUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckTukUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9AE8308BC4DA71EED836DBC /* DataWorkflowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataWorkflowTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		6CBC30BCE6227955F164D278 /* MasterO */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			explicitFileTypes = {
+			};
+			explicitFolders = (
+			);
+			path = MasterO;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXGroup section */
+		0F5169135A6BD65B5773BBA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75704529A7BDAEF2C3AB744F /* CheckTuk.app */,
+				9A4179AC7633E790E80F5980 /* CheckTukTests.xctest */,
+				E2441041F2905953AA962E42 /* CheckTukUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		700EF388C6221FDC92C86E82 /* CheckTukTests */ = {
+			isa = PBXGroup;
+			children = (
+				E9AE8308BC4DA71EED836DBC /* DataWorkflowTests.swift */,
+			);
+			name = CheckTukTests;
+			path = Tests/CheckTukTests;
+			sourceTree = "<group>";
+		};
+		B09A059D6172355EAA4F43DD /* CheckTukUITests */ = {
+			isa = PBXGroup;
+			children = (
+				199FF2808A006EFD46B303AC /* CheckTukUITests.swift */,
+			);
+			name = CheckTukUITests;
+			path = Tests/CheckTukUITests;
+			sourceTree = "<group>";
+		};
+		DE445F025B058A5791C17F01 = {
+			isa = PBXGroup;
+			children = (
+				700EF388C6221FDC92C86E82 /* CheckTukTests */,
+				B09A059D6172355EAA4F43DD /* CheckTukUITests */,
+				6CBC30BCE6227955F164D278 /* MasterO */,
+				0F5169135A6BD65B5773BBA9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3AF35AE7FF781AF0AF1B4088 /* CheckTukUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBA073647D5BA3731B938028 /* Build configuration list for PBXNativeTarget "CheckTukUITests" */;
+			buildPhases = (
+				389CFFD90F773F945022EE38 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F285220506C34232C84ED6A /* PBXTargetDependency */,
+			);
+			name = CheckTukUITests;
+			packageProductDependencies = (
+			);
+			productName = CheckTukUITests;
+			productReference = E2441041F2905953AA962E42 /* CheckTukUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		CBFAF20D3A71390041651898 /* CheckTukTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C57870A8D1261B0123C4F35 /* Build configuration list for PBXNativeTarget "CheckTukTests" */;
+			buildPhases = (
+				0E7376468701517ABE94908B /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				058A6FDA6335DF27AF527202 /* PBXTargetDependency */,
+			);
+			name = CheckTukTests;
+			packageProductDependencies = (
+			);
+			productName = CheckTukTests;
+			productReference = 9A4179AC7633E790E80F5980 /* CheckTukTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DD32A6908F123C794E08CEF5 /* CheckTuk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD870F8F7911186EA42C7DC9 /* Build configuration list for PBXNativeTarget "CheckTuk" */;
+			buildPhases = (
+				2BAE354461326299C3D52D59 /* Sources */,
+				CC49AA69FA15B2967AB00A8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				6CBC30BCE6227955F164D278 /* MasterO */,
+			);
+			name = CheckTuk;
+			packageProductDependencies = (
+			);
+			productName = CheckTuk;
+			productReference = 75704529A7BDAEF2C3AB744F /* CheckTuk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32039DE7FC7C6A1155CBB308 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3AF35AE7FF781AF0AF1B4088 = {
+						TestTargetID = DD32A6908F123C794E08CEF5;
+					};
+				};
+			};
+			buildConfigurationList = 2B6DAF99A90BF0E66B88171E /* Build configuration list for PBXProject "CheckTuk" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = DE445F025B058A5791C17F01;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 0F5169135A6BD65B5773BBA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD32A6908F123C794E08CEF5 /* CheckTuk */,
+				CBFAF20D3A71390041651898 /* CheckTukTests */,
+				3AF35AE7FF781AF0AF1B4088 /* CheckTukUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC49AA69FA15B2967AB00A8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E7376468701517ABE94908B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDEA9B30D159A53B0727A861 /* DataWorkflowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BAE354461326299C3D52D59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		389CFFD90F773F945022EE38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A25F533C4611FDBEFE776C6 /* CheckTukUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		058A6FDA6335DF27AF527202 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD32A6908F123C794E08CEF5 /* CheckTuk */;
+			targetProxy = 45FA00D3CF0337CAE0620720 /* PBXContainerItemProxy */;
+		};
+		3F285220506C34232C84ED6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD32A6908F123C794E08CEF5 /* CheckTuk */;
+			targetProxy = 437F648F68C0706B020DC086 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		052E0F192A0954F3DEDC0309 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.checktuk.tests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CheckTuk.app/Contents/MacOS/CheckTuk";
+			};
+			name = Debug;
+		};
+		23198C9D9FF3BA35C7A2E134 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.checktuk.tests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CheckTuk.app/Contents/MacOS/CheckTuk";
+			};
+			name = Release;
+		};
+		73C4BCD2E46C1F55AD2EBB69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.checktuk.uitests;
+				SDKROOT = macosx;
+				TEST_TARGET_NAME = CheckTuk;
+			};
+			name = Release;
+		};
+		BB5B7097BA77A6028B9BE62F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.checktuk.app;
+				PRODUCT_NAME = CheckTuk;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		CF0E4EA7178F2DFBE549597B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.checktuk.app;
+				PRODUCT_NAME = CheckTuk;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		E3C173F5FA7FB704EF76C2DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CheckTuk;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		F4F54564B9DC71EDDC5EA5A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.checktuk.uitests;
+				SDKROOT = macosx;
+				TEST_TARGET_NAME = CheckTuk;
+			};
+			name = Debug;
+		};
+		F51BAE64597559B78EB17556 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CheckTuk;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C57870A8D1261B0123C4F35 /* Build configuration list for PBXNativeTarget "CheckTukTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				052E0F192A0954F3DEDC0309 /* Debug */,
+				23198C9D9FF3BA35C7A2E134 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2B6DAF99A90BF0E66B88171E /* Build configuration list for PBXProject "CheckTuk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F51BAE64597559B78EB17556 /* Debug */,
+				E3C173F5FA7FB704EF76C2DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DD870F8F7911186EA42C7DC9 /* Build configuration list for PBXNativeTarget "CheckTuk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF0E4EA7178F2DFBE549597B /* Debug */,
+				BB5B7097BA77A6028B9BE62F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EBA073647D5BA3731B938028 /* Build configuration list for PBXNativeTarget "CheckTukUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4F54564B9DC71EDDC5EA5A0 /* Debug */,
+				73C4BCD2E46C1F55AD2EBB69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32039DE7FC7C6A1155CBB308 /* Project object */;
+}

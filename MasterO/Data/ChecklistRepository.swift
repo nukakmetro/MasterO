@@ -68,12 +68,12 @@ final class ChecklistRepository {
 
     func updateChecklist(_ application: ReleaseApplication, with drafts: [ChecklistItemDraft]) throws {
         let existingByID = Dictionary(uniqueKeysWithValues: application.checklistItems.map { ($0.id, $0) })
-        let retainedIDs = Set(drafts.compactMap(\.id))
+        let retainedIDs = Set(drafts.compactMap(\.storedID))
         for item in application.checklistItems where !retainedIDs.contains(item.id) {
             context.delete(item)
         }
         for (index, draft) in drafts.enumerated() {
-            if let id = draft.id, let item = existingByID[id] {
+            if let id = draft.storedID, let item = existingByID[id] {
                 item.title = draft.title
                 item.link = draft.link
                 item.sortOrder = index
@@ -95,6 +95,22 @@ final class ChecklistRepository {
         try context.save()
     }
 
+    func importTemplates(_ entries: [TemplateArchiveEntry]) throws -> Int {
+        var existingNames = Set(try templates().map(\.name))
+        for entry in entries {
+            let uniqueName = uniqueImportedName(for: entry.name, existingNames: existingNames)
+            let template = ChecklistTemplate(name: uniqueName, createdAt: entry.createdAt)
+            for item in entry.items.sorted(by: { $0.sortOrder < $1.sortOrder }) {
+                let templateItem = ChecklistTemplateItem(title: item.title, link: item.link, sortOrder: item.sortOrder)
+                templateItem.template = template
+            }
+            context.insert(template)
+            existingNames.insert(uniqueName)
+        }
+        try context.save()
+        return entries.count
+    }
+
     func updateTemplate(_ template: ChecklistTemplate, name: String, items: [(title: String, link: String)]) throws {
         template.name = name
         for item in template.items { context.delete(item) }
@@ -109,6 +125,15 @@ final class ChecklistRepository {
     func deleteTemplate(_ template: ChecklistTemplate) throws {
         context.delete(template)
         try context.save()
+    }
+
+    private func uniqueImportedName(for originalName: String, existingNames: Set<String>) -> String {
+        guard existingNames.contains(originalName) else { return originalName }
+        let baseName = "\(originalName) (импорт)"
+        guard existingNames.contains(baseName) else { return baseName }
+        var suffix = 2
+        while existingNames.contains("\(baseName) \(suffix)") { suffix += 1 }
+        return "\(baseName) \(suffix)"
     }
 
 }

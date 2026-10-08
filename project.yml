@@ -1,6 +1,7 @@
-name: MasterO
+name: CheckTuk
 options:
-  bundleIdPrefix: com.mastero
+  bundleIdPrefix: com.checktuk
+  projectFormat: xcode16_0
   deploymentTarget:
     macOS: "26.0"
 settings:
@@ -8,17 +9,41 @@ settings:
     SWIFT_VERSION: "6.0"
     MACOSX_DEPLOYMENT_TARGET: "26.0"
     GENERATE_INFOPLIST_FILE: YES
-    INFOPLIST_KEY_CFBundleDisplayName: MasterO
+    INFOPLIST_KEY_CFBundleDisplayName: CheckTuk
 targets:
-  MasterO:
+  CheckTuk:
     type: application
     platform: macOS
     sources:
-      - path: Sources
+      - path: MasterO
+        type: syncedFolder
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.mastero.checklists
-        PRODUCT_NAME: MasterO
+        PRODUCT_BUNDLE_IDENTIFIER: com.checktuk.app
+        PRODUCT_NAME: CheckTuk
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         SWIFT_EMIT_LOC_STRINGS: YES
         ENABLE_APP_SANDBOX: YES
         ENABLE_OUTGOING_NETWORK_CONNECTIONS: YES
+  CheckTukTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - path: Tests/CheckTukTests
+    dependencies:
+      - target: CheckTuk
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.checktuk.tests
+        GENERATE_INFOPLIST_FILE: YES
+  CheckTukUITests:
+    type: bundle.ui-testing
+    platform: macOS
+    sources:
+      - path: Tests/CheckTukUITests
+    dependencies:
+      - target: CheckTuk
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.checktuk.uitests
+        GENERATE_INFOPLIST_FILE: YES

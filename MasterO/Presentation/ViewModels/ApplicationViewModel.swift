@@ -99,6 +99,24 @@ final class ApplicationViewModel {
         catch { report(error) }
     }
 
+    func exportTemplates(_ templates: [ChecklistTemplate]) -> Data? {
+        do { return try TemplateArchiveCodec.encode(templates) }
+        catch { report(error); return nil }
+    }
+
+    func importTemplates(from data: Data) -> Int? {
+        guard let repository else { return nil }
+        do {
+            let entries = try TemplateArchiveCodec.decode(data)
+            let importedCount = try repository.importTemplates(entries)
+            refresh()
+            return importedCount
+        } catch {
+            report(error)
+            return nil
+        }
+    }
+
     private func report(_ error: Error) {
         errorMessage = "Не удалось сохранить изменения: \(error.localizedDescription)"
     }
